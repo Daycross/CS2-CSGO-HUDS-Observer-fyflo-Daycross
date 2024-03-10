@@ -16,7 +16,6 @@ body {
 #radar_border {
   opacity: 0;
   margin-left: 0px;
-  margin-top: 50px;
   width: 330px;
   height: 328px;
   /*
@@ -28,9 +27,8 @@ body {
 
 #iframe{
   margin-left: -30px;
-  margin-top: -25px;
-  width: 140%;
-  height: 140%;
+  width: 110%;
+  height: 110%;
 }
 
 #top_panel {
@@ -286,7 +284,7 @@ body {
 
 #alert {
   position: relative;
-  top: 0px;
+  top: 5px;
   width: 355px;
   height: 40px;
   background-color: var(--sub-panel-color);
@@ -757,7 +755,7 @@ body {
   text-align: left;
   vertical-align: text-bottom;
   line-height: 36px;
-  font-size: 23px;
+  font-size: 20px;
   font-weight: normal;
   color: var(--white-full);
 }
@@ -907,6 +905,7 @@ body {
 }
 
 #box_top {
+  display: none !important;
   border-radius: 5px;
   width: 100%;
   height: 71px;
@@ -931,10 +930,7 @@ body {
 
 #box_image {
   border-radius: 5px;
-  width: 387px;
-  height: 71px;
-  left: -10px;
-  position: absolute;
+  height: 70px;
   opacity: 1;
 }
 
@@ -1004,49 +1000,46 @@ body {
   margin-top: 5px;
   background-color: var(--main-panel-color);
   display: none;
+  padding: 5px;
 }
 
 .box_heading {
   width: 100%;
   height: 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
 #box_heading_text {
   font-family: "Rajdhani", sans-serif;
   text-align: center;
   vertical-align: text-bottom;
-  line-height: 23px;
   font-size: 16px;
   font-weight: normal;
   color: var(--white-full);
-  position: relative;
 }
 
 #box_heading_subtext {
   font-family: "Rajdhani", sans-serif;
   text-align: left;
   vertical-align: text-bottom;
-  line-height: 23px;
   font-size: 16px;
   font-weight: normal;
   color: var(--white-full);
-  position: relative;
-  top: -23px;
-  left: 246px;
 }
 
 .box_grenades {
   width: 100%;
-  height: 50px;
-  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 .box_nade_1 {
-  width: 90px;
-  height: 50px;
-  position: absolute;
   left: 0px;
+  display: flex;
+  align-items: center;
 }
 
 .util_smokegrenade_default {
@@ -1117,121 +1110,115 @@ body {
 }
 
 #util_nade_1 {
-  height: 50px;
-  width: 45px;
+  height: 30px;
+  width: 30px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  position: absolute;
-  /* left: 5px; */
-  top: -4px;
+  /* position: absolute;
+  left: 5px;
+  top: -4px; */
 }
 
 #util_nade_1_count {
-  height: 50px;
-  width: 45px;
+  padding-top: 2px;
+  height: 30px;
+  width: 30px;
   font-family: "Rajdhani", sans-serif;
   text-align: left;
   vertical-align: text-bottom;
-  line-height: 56px;
   font-size: 22px;
   font-weight: normal;
   color: var(--white-full);
-  position: absolute;
-  left: 47px;
+  /* position: absolute;
+  left: 47px; */
 }
 
 .box_nade_2 {
-  width: 90px;
-  height: 50px;
-  position: absolute;
-  left: 101px;
+  display: flex;
+  align-items: center;
 }
 
 #util_nade_2 {
-  height: 50px;
-  width: 45px;
+  height: 30px;
+  width: 30px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  position: absolute;
-  top: -4px;
+  /* position: absolute;
+  top: -4px; */
 }
 
 #util_nade_2_count {
-  height: 50px;
-  width: 45px;
+  padding-top: 2px;
+  height: 30px;
+  width: 30px;
   font-family: "Rajdhani", sans-serif;
   text-align: left;
   vertical-align: text-bottom;
-  line-height: 56px;
   font-size: 22px;
   font-weight: normal;
   color: var(--white-full);
-  position: absolute;
-  left: 47px;
+  /* position: absolute;
+  left: 47px; */
 }
 
 .box_nade_3 {
-  width: 90px;
-  height: 50px;
-  position: absolute;
-  right: 101px;
+  display: flex;
+  align-items: center;
 }
 
 #util_nade_3 {
-  height: 50px;
-  width: 45px;
+  height: 30px;
+  width: 30px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  position: absolute;
-  top: -4px;
+  /* position: absolute;
+  top: -4px; */
 }
 
 #util_nade_3_count {
-  height: 50px;
-  width: 45px;
+  padding-top: 2px;
+  height: 30px;
+  width: 30px;
   font-family: "Rajdhani", sans-serif;
   text-align: left;
   vertical-align: text-bottom;
-  line-height: 56px;
   font-size: 22px;
   font-weight: normal;
   color: var(--white-full);
-  position: absolute;
-  left: 47px;
+  /* position: absolute;
+  left: 47px; */
 }
 
 .box_nade_4 {
-  width: 90px;
-  height: 50px;
-  position: absolute;
-  right: 0px;
+  display: flex;
+  align-items: center;
 }
 
 #util_nade_4 {
-  height: 50px;
-  width: 45px;
+  height: 30px;
+  width: 30px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  position: absolute;
-  top: -4px;
+  /* position: absolute;
+  top: -4px; */
 }
 
 #util_nade_4_count {
-  height: 50px;
-  width: 45px;
+  padding-top: 2px;
+  height: 30px;
+  width: 30px;
   font-family: "Rajdhani", sans-serif;
   text-align: left;
   vertical-align: text-bottom;
-  line-height: 56px;
   font-size: 22px;
   font-weight: normal;
   color: var(--white-full);
-  position: absolute;
-  left: 47px;
+  /* position: absolute;
+  left: 47px; */
 }
 
 #box_monetary {
@@ -1240,6 +1227,7 @@ body {
   margin-top: 5px;
   background-color: var(--main-panel-color);
   display: none;
+  border-radius: 8px;
 }
 
 .box_equip_value {
@@ -1357,41 +1345,41 @@ body {
 }
 
 #players_left .loss_boxes {
-  left: 0px;
+  left: 6px;
 }
 
 #players_right .loss_boxes {
-  right: 0px;
+  right: 6px;
 }
 
 .loss_1 {
   width: 10px;
-  height: 14px;
-  top: 10px;
+  height: 10px;
+  top: 18px;
   position: relative;
   background-color: var(--white-dull);
 }
 
 .loss_2 {
   width: 10px;
-  height: 14px;
-  top: 8px;
+  height: 10px;
+  top: 16px;
   position: relative;
   background-color: var(--white-dull);
 }
 
 .loss_3 {
   width: 10px;
-  height: 14px;
-  top: 6px;
+  height: 10px;
+  top: 14px;
   position: relative;
   background-color: var(--white-dull);
 }
 
 .loss_4 {
   width: 10px;
-  height: 14px;
-  top: 4px;
+  height: 10px;
+  top: 12px;
   position: relative;
   background-color: var(--white-dull);
 }
@@ -1545,9 +1533,8 @@ body {
 #player_alias_text {
   font-family: "Rajdhani", sans-serif;
   vertical-align: text-bottom;
-  line-height: 40px;
-  font-size: 20px;
-  top:-5px;
+  font-size: 16px;
+  top: 4px;
   font-weight: normal;
   position: relative;
   text-overflow: ellipsis;
@@ -2123,7 +2110,7 @@ body {
   line-height: 42px;
   font-size: 20px;
   font-weight: bold;
-  color: var(--dev-purple);
+  color: #fff;
 }
 
 #player_kills_text,
@@ -2152,7 +2139,7 @@ body {
   line-height: 65px;
   font-size: 20px;
   font-weight: normal;
-  color: var(--color-bomb);
+  color: var(--color-bomb-light);
 }
 
 .img-hor {
@@ -2689,9 +2676,9 @@ body {
 
 :root {
   --main-panel-color:
-  rgb(0, 0, 0);
+  rgba(17, 17, 17, 0.89);
   --sub-panel-color:
-  rgba(0, 0, 0, 0.89);
+  rgba(17, 17, 17, 0.89);
   --white-dull:
   rgba(250, 250, 250, 0.25);
   --white-full:
@@ -2700,28 +2687,31 @@ body {
   rgba(250, 250, 250, 0.5);
   --color-moneys: #a7d32e;
   --dev-purple: #1c1c95;
-  --color-t: #c19511;
+  --color-t: rgba(253, 200, 0, 1);
   --color-ct: #1c3f46;
-  --color-new-t: #f0c941;
+  --color-new-t: rgba(253, 200, 0, 1);
   --color-new-ct: #5ab8f4;
-  --color-bomb: #f22222;
+  --color-bomb: rgba(124, 10, 10, 1);
+  --color-bomb-light: rgba(197, 30, 30, 1);
   --color-defuse: #00b33c;
 }
 
 
 #players_alive {
-  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
   height: 50px;
-  left: 87%;
+  left: 90%;
   position: absolute;
-  top: 10px;
+  top: 20px;
   font-weight: bold;
   background-color: var(--main-panel-color);
   border-radius: 12px;
   text-align: center;
   vertical-align: text-bottom;
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 25px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -2735,13 +2725,9 @@ body {
 }
 
 #players_alive #players_alive_bottom_text {
-  width: 33%;
-  height: 70%;
-  float: left;
   text-align: center;
   vertical-align: text-bottom;
-  font-size: 35px;
-  line-height: 45px;
+  font-size: 25px;
   color: white;
 }
 
